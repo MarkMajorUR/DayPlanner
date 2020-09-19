@@ -9,7 +9,7 @@ function updateTime() {
     var am_pm = split[1];
     var hour = split[0].split(":")[0];
     if (am_pm == "PM") {
-      hour += 12;
+      hour = parseInt(hour, 10)+12;
     }
 
     // $(this) === The current element in the loop
